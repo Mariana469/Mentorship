@@ -1,10 +1,11 @@
 package com.operators_loops;
 
-import java.util.Scanner;
-import java.math.*;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Scanner;
 
-public class CountCustomersDeposit {
+public class CountCustomersDepositWhile {
+
 
     private static final String ЧЕРЕЗ = "Через ";
     private static final String МІСЯЦІВ_ВАШ_ВКЛАД_БУДЕ = " місяців ваш вклад буде: ";
@@ -17,7 +18,9 @@ public class CountCustomersDeposit {
         double sum = scanner.nextDouble();
         System.out.println(ВВЕДІТЬ_КІЛЬКІСТЬ_МІСЯЦІВ);
         int numberOfMonths = scanner.nextInt();
-        for (int i = 1; i < numberOfMonths; i++) {
+        int i = 1;
+        while (i < numberOfMonths) {
+            i++;
             sum += (sum * 0.07);
         }
         BigDecimal bigDecimalSum = BigDecimal.valueOf(sum);
@@ -26,3 +29,5 @@ public class CountCustomersDeposit {
 
     }
 }
+
+

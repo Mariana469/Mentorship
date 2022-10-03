@@ -6,7 +6,7 @@ public class DoubleTheNumber {
         int i = 1;
         while (i <= 512) {
             System.out.println(i);
-            i*=2;
+            i *= 2;
         }
     }
 }
