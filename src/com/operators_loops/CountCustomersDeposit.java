@@ -1,8 +1,6 @@
 package com.operators_loops;
 
 import java.util.Scanner;
-import java.math.*;
-import java.math.BigDecimal;
 
 public class CountCustomersDeposit {
 
@@ -17,12 +15,11 @@ public class CountCustomersDeposit {
         double sum = scanner.nextDouble();
         System.out.println(ВВЕДІТЬ_КІЛЬКІСТЬ_МІСЯЦІВ);
         int numberOfMonths = scanner.nextInt();
-        for (int i = 1; i < numberOfMonths; i++) {
+        for (int i = 0; i < numberOfMonths; i++) {
             sum += (sum * 0.07);
         }
-        BigDecimal bigDecimalSum = BigDecimal.valueOf(sum);
-        BigDecimal bigDecimalSumRounded = bigDecimalSum.setScale(2, RoundingMode.HALF_DOWN);
-        System.out.println(ЧЕРЕЗ + numberOfMonths + МІСЯЦІВ_ВАШ_ВКЛАД_БУДЕ + bigDecimalSumRounded);
+        Math.round(sum);
+        System.out.println(ЧЕРЕЗ + numberOfMonths + МІСЯЦІВ_ВАШ_ВКЛАД_БУДЕ + sum);
 
     }
 }

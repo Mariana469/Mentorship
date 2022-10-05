@@ -12,7 +12,7 @@ public class WeekDaySwitch {
 
     public static void main(String[] args) {
 
-        displayWeekDay(3);
+        displayWeekDay(7);
     }
 
     static void displayWeekDay(int number) {
@@ -33,8 +33,6 @@ public class WeekDaySwitch {
                 System.out.println(FRIDAY);
                 break;
             case 6:
-                System.out.println(WEEKEND);
-                break;
             case 7:
                 System.out.println(WEEKEND);
                 break;
