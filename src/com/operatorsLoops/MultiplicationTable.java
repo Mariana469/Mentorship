@@ -1,9 +1,10 @@
-package com.operators_loops;
+package com.operatorsLoops;
 
 public class MultiplicationTable {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
-            System.out.printf("%5d", ((i+1)*4));
+            int r = (4 * (i + 1));
+            System.out.println("4 * " + (i + 1) + " = " + r);
 
         }
         System.out.println();

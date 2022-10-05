@@ -1,4 +1,4 @@
-package com.operators_loops;
+package com.operatorsLoops;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class EverySeventhNumber {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         for (int i = 1; i <= number; i++) {
-            if ((i%7)==0) {
+            if ((i % 7) == 0) {
                 System.out.println(i);
             }
         }
