@@ -1,4 +1,4 @@
-package com.operators_loops;
+package com.operatorsLoops;
 
 public class MultiplicationTable {
     public static void main(String[] args) {
