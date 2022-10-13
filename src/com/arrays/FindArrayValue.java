@@ -3,11 +3,17 @@ package com.arrays;
 import java.util.Arrays;
 
 public class FindArrayValue {
+    private static final String THE_INPUT_ARRAY = "The input array: ";
+    private static final String KEY_TO_BE_SEARCHED_IS = "Key to be searched is: ";
+    private static final String ELEMENT_IS_FOUND_AT_INDEX = "Element is found at index: ";
+    private static final String ELEMENT_IS_NOT_FOUND = "Element is not found!";
+
     public static void main(String[] args) {
         int[] array = new int[]{30, 50, 62, 42, 72};
-        System.out.println("The input array: " + Arrays.toString(array));
+
+        System.out.println(THE_INPUT_ARRAY + Arrays.toString(array));
         int key = 30;
-        System.out.println("Key to be searched is: " + key);
+        System.out.println(KEY_TO_BE_SEARCHED_IS + key);
         int first = 0;
         int last=array.length-1;
         int mid = (first + last)/2;
@@ -15,7 +21,7 @@ public class FindArrayValue {
             if ( array[mid] < key ){
                 first = mid + 1;
             }else if ( array[mid] == key ){
-                System.out.println("Element is found at index: " + mid);
+                System.out.println(ELEMENT_IS_FOUND_AT_INDEX + mid);
                 break;
             }else{
                 last = mid - 1;
@@ -23,7 +29,7 @@ public class FindArrayValue {
             mid = (first + last)/2;
         }
         if ( first > last ){
-            System.out.println("Element is not found!");
+            System.out.println(ELEMENT_IS_NOT_FOUND);
         }
     }
 }
