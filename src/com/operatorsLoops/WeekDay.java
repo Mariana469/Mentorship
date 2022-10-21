@@ -1,4 +1,4 @@
-package com.operatorsLoops;
+package com.operators_loops;
 
 public class WeekDay {
 

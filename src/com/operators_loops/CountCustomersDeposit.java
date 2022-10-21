@@ -2,8 +2,7 @@ package com.operators_loops;
 
 import java.util.Scanner;
 
-public class CountCustomersDepositWhile {
-
+public class CountCustomersDeposit {
 
     private static final String ЧЕРЕЗ = "Через ";
     private static final String МІСЯЦІВ_ВАШ_ВКЛАД_БУДЕ = " місяців ваш вклад буде: ";
@@ -16,9 +15,7 @@ public class CountCustomersDepositWhile {
         double sum = scanner.nextDouble();
         System.out.println(ВВЕДІТЬ_КІЛЬКІСТЬ_МІСЯЦІВ);
         int numberOfMonths = scanner.nextInt();
-        int i = 0;
-        while (i < numberOfMonths) {
-            i++;
+        for (int i = 0; i < numberOfMonths; i++) {
             sum += (sum * 0.07);
         }
         Math.round(sum);
@@ -26,5 +23,3 @@ public class CountCustomersDepositWhile {
 
     }
 }
-
-
