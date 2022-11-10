@@ -18,5 +18,14 @@ public class Main {
         triangle.areaOfTriangle();
         triangle.perimeterOfTriangle();
 
+        Mouse mouse = new Mouse();
+        mouse.eat();
+        Lion lion = new Lion();
+        lion.eat();
+        Horse horse = new Horse();
+        horse.eat();
+        Python python = new Python();
+        python.eat();
+
     }
 }
