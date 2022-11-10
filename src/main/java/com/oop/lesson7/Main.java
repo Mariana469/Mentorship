@@ -27,5 +27,8 @@ public class Main {
         Python python = new Python();
         python.eat();
 
+        HondaCivic honda = new HondaCivic((new Hatchback(25)));
+        honda.gas();
+
     }
 }
