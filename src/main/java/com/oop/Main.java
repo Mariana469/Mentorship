@@ -11,5 +11,17 @@ public class Main {
         System.out.println("p1.distance(p2) = " + firstPoint.distance(secondPoint));
         l1.isParallel(l2);
 
+        Circle circle = new Circle(2.5);
+        System.out.println(circle.perimeterOfCircle(2.5));
+        System.out.println(circle.areaOfCircle(2.5));
+
+        Dog dog = new Dog();
+        System.out.println(dog.isOld(3));
+        dog.say();
+
+        Rectangle rectangle = new Rectangle(2, 3);
+        rectangle.calculatePerimeter();
+        rectangle.calculateSquare();
+
     }
 }

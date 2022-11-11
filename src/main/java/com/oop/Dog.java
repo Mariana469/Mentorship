@@ -3,21 +3,16 @@ package com.oop;
 public class Dog {
     private String breed;
 
-    public static void say() {
+    public void say() {
         System.out.println("Гав-гав");
     }
 
-    public static boolean isOld(int dogAge) {
+    public boolean isOld(int dogAge) {
         if (dogAge > 5) {
             return true;
         } else {
             return false;
         }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(isOld(3));
-        say();
     }
 
     public String getBreed() {

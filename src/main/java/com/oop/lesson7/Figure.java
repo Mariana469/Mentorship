@@ -1,7 +1,7 @@
 package com.oop.lesson7;
 
-public class Figure {
-    public Figure() {
-    }
+public abstract class Figure {
+    public abstract void area();
+    public abstract void perimeter();
 
 }

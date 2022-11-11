@@ -1,22 +1,23 @@
 package com.oop.lesson7;
 
 public class HondaCivic extends Hatchback{
-    private Hatchback hatchback;
+    private Hatchback fourWheels;
 
     public Hatchback getHatchback() {
-        return hatchback;
+        return fourWheels;
     }
 
     public void setHatchback(Hatchback hatchback) {
-        this.hatchback = hatchback;
+        this.fourWheels = hatchback;
     }
 
 
-    public HondaCivic (Hatchback hatchback) {
-        this.hatchback = hatchback;
+    public HondaCivic (Hatchback fourWheels) {
+        this.fourWheels = fourWheels;
     }
     @Override
     public void gas() {
-        System.out.println("Honda Civic drives fast");
+        System.out.println("Honda Civic dr" +
+                "ives fast");
     }
 }

@@ -55,11 +55,11 @@ public class Triangle extends Figure {
                 '}';
     }
 
-    public void areaOfTriangle() {
+    public void area() {
         System.out.println("Area of triangle: " + ((triangleWidth * triangleHeight) / 2));
     }
 
-    public void perimeterOfTriangle() {
+    public void perimeter() {
         System.out.println("Perimeter of triangle: " + (firstSide + secondSide + triangleWidth));
     }
 }

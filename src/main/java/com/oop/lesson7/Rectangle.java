@@ -33,11 +33,11 @@ public class Rectangle extends Figure {
                 '}';
     }
 
-    public void areaOfRectangle() {
+    public void area() {
         System.out.println("Area of Rectangle: " + rectangleWidth * rectangleLength);
     }
 
-    public void perimeterOfRectangle() {
+    public void perimeter() {
         System.out.println("Perimeter of Rectangle: " + (rectangleWidth + rectangleLength) * 2);
     }
 }

@@ -22,11 +22,12 @@ public class Circle extends Figure {
                 '}';
     }
 
-    public double perimeterOfCircle() {
-        return Math.PI * radius * 2;
+    public void perimeter() {
+
+        System.out.println(Math.PI * radius * 2);
     }
 
-    public double areaOfCircle() {
-        return Math.PI * Math.pow(radius, 2);
+    public void area() {
+        System.out.println(Math.PI * Math.pow(radius, 2));
     }
 }

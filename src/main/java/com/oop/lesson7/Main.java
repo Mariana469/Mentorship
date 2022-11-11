@@ -4,19 +4,19 @@ public class Main {
     public static void main(String[] args) {
         Circle circle = new Circle(2.5);
         System.out.println(circle);
-        System.out.println("Area of circle: " + circle.areaOfCircle());
-        System.out.println("Perimeter of Circle: " + circle.perimeterOfCircle());
+        circle.area();
+        circle.perimeter();
 
         Rectangle rectangle = new Rectangle(5, 6);
         System.out.println(rectangle);
-        rectangle.areaOfRectangle();
-        rectangle.perimeterOfRectangle();
+        rectangle.area();
+        rectangle.perimeter();
 
 
         Triangle triangle = new Triangle(5, 9, 3, 1);
         System.out.println(triangle);
-        triangle.areaOfTriangle();
-        triangle.perimeterOfTriangle();
+        triangle.area();
+        triangle.perimeter();
 
         Mouse mouse = new Mouse();
         mouse.eat();
