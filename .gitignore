@@ -29,3 +29,8 @@ bin/
 .DS_Store
 /.idea/jarRepositories.xml
 /.idea/compiler.xml
+
+pom.xml
+Mentorship.iml
+
+/target
