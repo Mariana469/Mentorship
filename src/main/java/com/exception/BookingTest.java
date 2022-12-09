@@ -1,15 +1,18 @@
 package com.exception;
 
-public class BookPlaceTest {
+public class BookingTest {
     public static void main(String[] args) {
-        BookPlaceManager manager = new BookPlaceManager();
+        BookingMonitorManagerC bookingMonitorManager = new BookingMonitorManagerC();
+        BookingManagerA manager = new BookingManagerA();
+        manager = bookingMonitorManager;
         Place anotherPlace = new Place();
         try {
             Place place = manager.book(21);
             anotherPlace = null;
             System.out.println(anotherPlace.toString());
         } catch (IncorrectPlaceNumberException e) {
-            System.err.println(e);
+            e.printStackTrace();
+            // wanted to try printStackTrace method
         }
     }
 }

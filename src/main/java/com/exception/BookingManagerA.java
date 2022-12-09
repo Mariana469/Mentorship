@@ -1,6 +1,6 @@
 package com.exception;
 
-public class BookPlaceManager {
+public class BookingManagerA {
     public Place book(int placeNumber) throws IncorrectPlaceNumberException {
         if (placeNumber < 20) {
             return new Place();

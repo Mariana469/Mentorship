@@ -7,8 +7,7 @@ public class PurchaseOrder {
             poNumbers[11] = 123456;
         } catch (ArrayIndexOutOfBoundsException outOfBoundsPoNumber) {
             System.out.println("Array Index is Out Of Bounds");
-        }
-        finally {
+        } finally {
             System.out.println("Only 10 POs can be created");
         }
 
