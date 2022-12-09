@@ -7,7 +7,7 @@ public class BookingTest {
         manager = bookingMonitorManager;
         Place anotherPlace = new Place();
         try {
-            Place place = manager.book(21);
+            Place place = manager.bookPlace(21);
             anotherPlace = null;
             System.out.println(anotherPlace.toString());
         } catch (IncorrectPlaceNumberException e) {
