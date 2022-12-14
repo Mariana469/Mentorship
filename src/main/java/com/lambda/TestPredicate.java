@@ -1,7 +1,7 @@
 package com.lambda;
 
 import java.util.Optional;
-import java.util.function.Function;
+import java.util.function.BiFunction;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
@@ -20,8 +20,8 @@ public class TestPredicate {
         return String::isEmpty;
     }
 
-    public Function<String, String> getAndRepeatString(int n) {
-        return s -> s.repeat(n);
+    public BiFunction<String, Integer, String> getAndRepeatString() {
+        return String::repeat;
     }
 
     public Supplier<Integer> generateRandomNumbers() {
