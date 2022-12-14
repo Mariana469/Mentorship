@@ -20,8 +20,8 @@ public class TestPredicate {
         return String::isEmpty;
     }
 
-    public Function<String, String> getAndRepeatString() {
-        return s -> s.repeat(5);
+    public Function<String, String> getAndRepeatString(int n) {
+        return s -> s.repeat(n);
     }
 
     public Supplier<Integer> generateRandomNumbers() {
