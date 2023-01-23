@@ -6,36 +6,37 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class TestCollection {
-    private static final String REGEX = "[,.]";
+    private static final String REGEX_SPECIAL_SYMBOLS = "[\\p{P}\\p{S}]";
+    private static final String WORD_CHARS_BIGGER_THEN_SIX_REGEX = "[a-zA-Zа-яА-ЯіІїЇєЄҐґ]{6,}";
     private List<String> wordCollection;
 
     public TestCollection(String someText) {
-        this.wordCollection = new ArrayList(Arrays.asList(someText.replaceAll(REGEX, StringUtils.EMPTY).split(StringUtils.SPACE)));
+        this.wordCollection = new ArrayList(Arrays.asList(someText.replaceAll(REGEX_SPECIAL_SYMBOLS, StringUtils.EMPTY).split(StringUtils.SPACE)));
     }
 
     public int getWordsCount() {
         return this.wordCollection.size();
     }
 
-    //printing by using iterator
+    /**
+     * printing with iterator
+      */
     public void printCollectionToConsoleSortedUsingIterator() {
         Collections.sort(wordCollection);
-        ListIterator<String> iterator = wordCollection.listIterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+        for (String s : wordCollection) {
+            System.out.println(s);
         }
     }
 
     public void deleteEachElementBiggerThenSix() {
-        wordCollection = wordCollection.stream().filter(e -> !e.matches("[a-zA-Zа-яА-ЯіІїЇєЄҐґ]{6,}")).collect(Collectors.toList());
+        wordCollection = wordCollection.stream().filter(e -> !e.matches(WORD_CHARS_BIGGER_THEN_SIX_REGEX)).collect(Collectors.toList());
     }
 
-    public List<String> addAsteriskToEachElementLessThenThreeAndSort() {
+    public void addAsteriskToEachElementLessThenThreeAndSort() {
         wordCollection = wordCollection.stream().filter(e -> e.length() <= 3).map(s -> s.length() == 2 ? s + "*" : (s.length() == 1 ? s + "**" : s)).collect(Collectors.toList());
-        return wordCollection;
     }
 
-    public void findUniqueElements() {
+    public void printUniqueElements() {
         TreeSet<String> uniqueWords = new TreeSet<>(wordCollection);
         for (String s : uniqueWords) {
             System.out.println(s);

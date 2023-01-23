@@ -9,7 +9,7 @@ public class Main {
         System.out.println(myTestCollection.getWordsCount());
         myTestCollection.deleteEachElementBiggerThenSix();
         myTestCollection.addAsteriskToEachElementLessThenThreeAndSort();
-        myTestCollection.findUniqueElements();
+        myTestCollection.printUniqueElements();
         Student Ira = new Student(10, "Iryna Vorochak", 635896321, Student.faculty.HISTORY);
         Student Nastia = new Student(15, "Anastasia Velyka", 58236958, Student.faculty.HISTORY);
         Student NastiaCopy = new Student(15, "Anastasia Velyka", 58236958, Student.faculty.HISTORY);
